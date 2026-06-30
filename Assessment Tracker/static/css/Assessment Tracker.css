@@ -1,0 +1,31 @@
+body {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+h1 {
+    color: white;
+    font-size: 50px;
+}
+h2 {
+    color: white;
+    font-size: 35px;
+}
+a {
+    color:blue;
+    -webkit-text-stroke: 1px white;
+    font-size: 25px;
+}
+hr {
+    color: white;
+}
+.outerBorder {
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 2px;
+}
+.innerBorder {
+    border: 2px solid white;
+    border-radius: 48px;
+    padding: 10px;
+}
