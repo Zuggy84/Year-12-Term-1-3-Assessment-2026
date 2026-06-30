@@ -1,0 +1,17 @@
+SCHOOLWORK TRACKER
+__________________
+
+CLIENT REQUESTS:
+________________
+
+Assessment pages: All assessments will have their very own pages that can be accessed through a subject menu, so if a user has multiple assessments, all instructions can be isolated to a specific assessment and it all doesn't have to fit on one page.
+
+Calendar: The app will use a calendar to mark assessment deadlines on specific dates, these due dates will have to be inputted by the user. When these dates are met, the user will be notified, the calendar will also contain halfway points for assessments, the user will also be notified when halfway points are passed.
+
+Assessment input: The user will have an option to input assessment details (Assessment type, due date, task outline etc.). All these details will be saved to a database and displayed on an assessment page.
+
+Subtasks: Within assessment pages, users will be able to break down the elements of the assessment into subtasks, these subtasks can also be put onto the calendar, so that users have to complete a portion of an assessment before a specific date.
+
+Assessment type: Within assessment pages, it will be elaborated the assessment type (Essay, research task, exam etc.)
+
+Subject pages: As well as assessment pages, the user will have to access a subject menu (Mathematics, History, English etc.), further specifying assessments.
