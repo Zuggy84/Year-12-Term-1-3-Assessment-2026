@@ -1,6 +1,7 @@
 body {
-    background-color: cornflowerblue;
+    background-color: darkslategray;
     text-align: center;
+    font-family: Georgia;
 }
 h1 {
     color: white;
@@ -11,8 +12,10 @@ h2 {
     font-size: 35px;
 }
 a {
+    background-color: white;
+    border: 2px solid lightslategray;
+    padding:10px;
     color:blue;
-    -webkit-text-stroke: 1px white;
     font-size: 25px;
 }
 hr {
@@ -20,12 +23,29 @@ hr {
 }
 .outerBorder {
     margin: 20px;
-    border: 2px solid white;
-    border-radius: 50px;
+    border: 2px solid lightslategray;
     padding: 2px;
 }
 .innerBorder {
-    border: 2px solid white;
-    border-radius: 48px;
+    border: 2px solid lightslategray;
     padding: 10px;
+}
+label {
+    color: white;
+    font-size: 25px;
+}
+input {
+    background-color: white;
+    border: 2px solid lighslategray;
+    padding: 2px;
+}
+p {
+    color: white;
+    font-size: 20px;
+}
+#Invalid_credentials {
+    background-color: white;
+    border: 2px solid lightslategray;
+    padding: 2px;
+    color: red;
 }

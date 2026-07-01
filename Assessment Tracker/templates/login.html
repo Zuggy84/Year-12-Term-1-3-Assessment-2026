@@ -7,25 +7,20 @@
     <body>
         <div class="outerBorder">
             <div class="innerBorder">
-                <hr>
-                <h1>Farmiliar? Login here</h1>
-                <hr>
+                <h1>Familiar? Login here!</h1>
                 <form method="POST" action="/login">
                     <label for="username">Username:</label>
                     <input type="text" name="username" required>
-                    <br>
                     <label for="password">Password:</label>
                     <input type="password" name="password" required>
-                    <br>
                     <input type="submit" value="Login">
                 </form>
                 {% if user_not_logged_in %}
-                    <br>
-                    <p style="color: red;">Invalid username or password. Try again</p>
+                    <p style="color: red;" id="Invalid_credentials">Invalid username or password. Try again</p>
                 {% endif %}
-                <hr>
-                <h2>Don't have an account? <a href="/register">Register here</a></h2>
-                <hr>
+                <h2>Navigation Menu:</h2>
+                <a href="/register">Register Page</a>
+                <a href="/">Home Page</a>
             </div>
         </div>
     </body>
