@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Register Page</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    </head>
+    <body>
+        <h1>Newcomer? Register Here!</h1>
+        <form method='POST' action='/register'>
+            <label for='user_name'>User Name:</label>
+            <input type='text' name='user_name' required>
+            <label for='user_password'>Password:</label>
+            <input type='password' name='user_password' required>
+            <input type='submit' value='Register'>
+        </form>
+        <h2>Navigation Menu:</h2>
+        <a href='/log_in'>Log In Page</a>
+        <a href='/'>Home Page</a>
+    </body>
+</html>
