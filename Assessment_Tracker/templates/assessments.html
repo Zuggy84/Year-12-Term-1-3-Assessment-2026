@@ -1,3 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Assessments Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "/static/css/Assessment_Tracker.css">
+    </head>
+    <body>
+        <h1>Assessments</h1>
+        {% for assessment in assessments %}
+            <h2>{{ assessment[1] }} | {{ assessment[2] }} | {{ assessment[3] }} | {{ assessment[4] }} | {{ assessment[5] }} | {{ assessment[6] }}</h2>
+        {% endfor %}
+    </body>
 </html>

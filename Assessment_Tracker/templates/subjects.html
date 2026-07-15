@@ -1,3 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Subjects Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "/static/css/Assessment_Tracker.css">
+    </head>
+    <body>
+        <h1>Subjects</h1>
+        {% for subject in subjects %}
+            <h2>{{ subject }}</h2>
+        {% endfor %}
+    </body>
 </html>

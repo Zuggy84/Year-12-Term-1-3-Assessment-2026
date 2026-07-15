@@ -2,20 +2,20 @@
 <html>
     <head>
         <title>Home Page</title>
-        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+        <link rel = "stylesheet" type = "text/css" href = "/static/css/Assessment_Tracker.css">
     </head>
     <body>
         <h1>Assessment Tracker</h1>
         <h2>Track Assessments And Keep Organised!</h2>
-        {% if user_log_in_status==False %}
+        {% if user_log_in_status == False %}
             <h2>Navigation Menu:</h2>
-            <a href='/log_in'>Log In Page</a>
-            <a href='/register'>Register Page</a>
+            <a href = "/log_in">Log In Page</a>
+            <a href = "/register">Register Page</a>
         {% endif %}
-        {% if user_log_in_status==True %}
+        {% if user_log_in_status == True %}
             <h2>Navigation Menu:</h2>
-            <a href='/assessments'>Assessments Page</a>
-            <a href='/subjects'>Subjects Page</a>
+            <a href = "/assessments">Assessments Page</a>
+            <a href = "/subjects">Subjects Page</a>
         {% endif %}
     </body>
 </html>
