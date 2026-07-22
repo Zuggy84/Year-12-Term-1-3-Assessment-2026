@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Add Assessments</title>
+        <title>Add Assessments Page</title>
         <link rel = "stylesheet" type = "text/css" href = "/static/css/Assessment_Tracker.css">
     </head>
     <body>
         <h1>New Assessments? Add It Here!</h1>
         <form method = "POST" action = "/add_assessments">
-            <label for = "assessment_type">Assessment Type:</label>
+            <label for = "assessment_type">Assessment Type: </label>
             <input type = "text" name = "assessment_type" required>
-            <label for = "assessment_subject">Assessment Subject:</label>
+            <br>
+            <label for = "assessment_subject">Assessment Subject: </label>
             <input type = "text" name = "assessment_subject" required>
-            <label for = "assessment_issue_date">Assessment Issue Date:</label>
+            <br>
+            <label for = "assessment_issue_date">Assessment Issue Date: </label>
             <input type = "date" name = "assessment_issue_date" required>
-            <label for = "assessment_due_date_and_time">Assessment Due Date And Time:</label>
+            <br>
+            <label for = "assessment_due_date_and_time">Assessment Due Date And Time: </label>
             <input type = "datetime" name = "assessment_due_date_and_time" required>
-            <label for = "assessment_grade_weight">Assessment Grade Weight:</label>
+            <br>
+            <label for = "assessment_grade_weight">Assessment Grade Weight: </label>
             <input type = "text" name = "assessment_grade_weight" required>
-            <label for = "assessment_task_explanation">Assessment Task Explanation:</label>
+            <br>
+            <label for = "assessment_task_explanation">Assessment Task Explanation: </label>
             <input type = "text" name ="assessment_task_explanation" required>
+            <br>
             <input type = "submit" value = "Add Assessment">
         </form>
         <h2>Navigation Menu:</h2>
+        <a href = "/assessments">Assessments Page</a>
+        <a href = "/subjects">Subjects Page</a>
         <a href = "/">Home Page</a>
     </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Register Page</title>
@@ -7,12 +7,17 @@
     <body>
         <h1>Newcomer? Register Here!</h1>
         <form method = "POST" action = "/register">
-            <label for = "user_name">User Name:</label>
+            <label for = "user_name">User Name: </label>
             <input type = "text" name = "user_name" required>
-            <label for = "user_password">Password:</label>
+            <br>
+            <label for = "user_password">Password: </label>
             <input type = "password" name = "user_password" required>
+            <br>
             <input type = "submit" value = "Register">
         </form>
+        {% if user_name_already_exists == True %}
+            <p id = "user_log_in_error">User Account Already Exists, Enter Different Credentials!</p>
+        {% endif %}
         <h2>Navigation Menu:</h2>
         <a href = "/log_in">Log In Page</a>
         <a href = "/">Home Page</a>

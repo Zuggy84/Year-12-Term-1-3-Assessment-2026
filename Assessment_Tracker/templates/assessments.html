@@ -6,8 +6,15 @@
     </head>
     <body>
         <h1>Assessments</h1>
+        <h2>Navigation Menu:</h2>
+        <a href = "/add_assessments">Add Assessments Page</a>
+        <a href = "/subjects">Subjects Page</a>
+        <a href = "/">Home Page</a>
         {% for assessment in assessments %}
-            <h2>{{ assessment[1] }} | {{ assessment[2] }} | {{ assessment[3] }} | {{ assessment[4] }} | {{ assessment[5] }} | {{ assessment[6] }}</h2>
+            <h2>Assessment Type: {{ assessment[1] }}</h2>
+            <br>
+            <h2>Assessment Task Explanation: {{ assessment[6] }}</h2>
+            <hr>
         {% endfor %}
     </body>
 </html>

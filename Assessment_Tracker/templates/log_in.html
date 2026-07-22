@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Log In Page</title>
@@ -7,14 +7,19 @@
     <body>
         <h1>Familiar? Log In Here!</h1>
         <form method = "POST" action = "/log_in">
-            <label for = "user_name">User Name</label>
+            <label for = "user_name">User Name: </label>
             <input type = "text" name = "user_name" required>
-            <label for = "user_password">Password</label>
+            <br>
+            <label for = "user_password">Password: </label>
             <input type = "password" name = "user_password" required>
+            <br>
             <input type = "submit" value = "Log In">
         </form>
+        {% if user_account_does_not_exist == True %}
+            <p id = "user_log_in_error">User Account Does Not Exist!</p>
+        {% endif %}
         {% if user_log_in_unsuccessful == True %}
-            <p>Invalid Credential/Credentials, Try Again!</p>
+            <p id = "user_log_in_error">Account Exists, However The Password Is Incorrect, Try Again!</p>
         {% endif %}
         <h2>Navigation Menu:</h2>
         <a href = "/register">Register Page</a>

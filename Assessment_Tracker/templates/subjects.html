@@ -6,8 +6,12 @@
     </head>
     <body>
         <h1>Subjects</h1>
-        {% for subject in subjects %}
-            <h2>{{ subject }}</h2>
+        <h2>Navigation Menu:</h2>
+        <a href = "/assessments">Assessments Page</a>
+        <a href = "/">Home Page</a>
+        {% for assessment in assessments %}
+            <h2>{{ assessment[2] }}</h2>
+            <hr>
         {% endfor %}
     </body>
 </html>
